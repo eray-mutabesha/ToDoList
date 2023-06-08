@@ -1,10 +1,6 @@
  const inpt=document.getElementById("task");
  const btn_add=document.getElementById("add_btn");
  const dive=document.getElementById("dive");
- 
-
- 
-
 var task="";
 inpt.addEventListener("input",(e)=>{
    task=e.target.value;
@@ -17,16 +13,15 @@ inpt.addEventListener("input",(e)=>{
       const li=document.createElement("li");
       const chek=document.createElement("input");
       const nav=document.createElement("nav");
-      nav.appendChild(delet);
       delet.innerHTML="x";
+      nav.appendChild(delet);
       nav.appendChild(li);
       nav.appendChild(chek);
       nav.style.display="flex";
       chek.type="checkbox";
-    
-      li.style.background="green";
+      
       li.style.margin="5px";
-      li.style.width="30%";
+      li.style.width="100%";
       li.style.listStyle="none";
       dive.appendChild(nav);
       chek.style.margin="5px";
@@ -39,6 +34,7 @@ inpt.addEventListener("input",(e)=>{
       if (inpt.value=="") {
         li.remove();
         chek.remove();
+        delet.remove();
         const message=getElementById("message");
         message.innerHTML="you need to add tasks to do";
       }
