@@ -41,12 +41,12 @@ form{
 body{
     background-image:linear-gradient(to right,rgb(1, 36, 44),rgba(252, 21, 9, 0.513),rgb(9, 35, 38));
 }
-// input:invalid{
-//     border: 2px  solid red;
-// }
-// input:valid{
-//     border:2px solid green;
-// }
+ input:invalid{
+ border: 2px  solid red;
+}
+input:valid{
+   border:2px solid green;
+}
 input{
     outline: none;
     background-color: rgb(4, 227, 247);
