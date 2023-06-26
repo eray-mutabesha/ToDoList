@@ -1,0 +1,18 @@
+@media (max-width:660px){
+    #add_btn{
+        background-color: rgb(69, 163, 69);
+    }
+    #clear_btn{
+       display: none;
+    }
+}
+@media (max-width:500px){
+    #reset{
+        font-size: 10px;
+    }
+}
+@media (max-width:470px){
+    #reset{
+       display: none;
+    }
+}
