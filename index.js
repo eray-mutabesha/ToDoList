@@ -26,9 +26,9 @@
 
       delet.innerHTML="x";
       chek.type="checkbox";
-      if(chek.checked="true"){
-        alert("hello");
-       }
+     chek.addEventListener("click",()=>{
+      li.style.textDecoration="line-through 2px solid black";
+     })
 
       diveflex.appendChild(chek);
       chek.style.borderRadius="50%";

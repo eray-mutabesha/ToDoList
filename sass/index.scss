@@ -4,6 +4,8 @@ h1{
     color: white;
     text-align: center;
     font-size: 30px;
+    
+    
 }
 form{
     @include centre;
@@ -76,6 +78,8 @@ input{
             width: 30px;
             height: 30px;
         }
+        
+       
         button{
             border-radius: 50%;
             width: 30px;
