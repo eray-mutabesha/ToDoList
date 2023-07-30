@@ -31,9 +31,11 @@
      })
 
       diveflex.appendChild(chek);
-      chek.style.borderRadius="50%";
+      chek.style.boxShadow="0px 0px 5px 1px black";
+      // chek.style.borderRadius="50%";
       diveflex.appendChild(para);
       para.appendChild(li);
+      
      
       li.style.listStyle="none";
       li.innerHTML=task;
@@ -41,7 +43,7 @@
 
       dive.appendChild(diveflex);
       diveflex.style.display="flex";
-      diveflex.style.justifyContent="";
+      diveflex.style.justifyContent="space-around";
       diveflex.style.padding="10px";
       dive.style.display="grid";
       

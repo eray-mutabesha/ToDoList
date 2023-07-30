@@ -11,24 +11,29 @@
     font-size: 10px;
   }
 }
-@media (max-width: 470px) {
-  #reset {
-    display: none;
+@media (max-width: 405px) {
+  form #dive div div {
+    width: 150px;
   }
 }
-h1 {
-  color: white;
-  text-align: center;
-  font-size: 30px;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 form {
   margin-right: auto;
   margin-left: auto;
-  background: rgba(0, 25, 27, 0.776);
-  width: 50%;
+  border-radius: 20px;
+  background: rgba(31, 30, 30, 0.776);
+  width: 80%;
   padding: 20px;
   margin-top: 50px;
+}
+form h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
 }
 form .bttn {
   background: rgb(4, 227, 247);
@@ -86,12 +91,7 @@ input {
 
 #dive {
   width: 100%;
-}
-#dive div {
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  width: 50%;
+  margin: auto;
 }
 #dive div input {
   width: 30px;
@@ -99,6 +99,10 @@ input {
 }
 #dive div button {
   border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: none;
+  box-shadow: 0px 0px 5px 1px black;
   width: 30px;
   height: 30px;
   margin: 10px;
@@ -107,5 +111,7 @@ input {
   width: 200px;
 }
 #dive div div p {
-  color: white;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  word-wrap: break-word;
 }/*# sourceMappingURL=index.css.map */
