@@ -37,7 +37,7 @@
 
       dive.appendChild(diveflex);
       diveflex.style.display="flex";
-      diveflex.style.border="1px solid red";
+      
      
       diveflex.style.justifyContent="space-around";
       diveflex.style.padding="10px";
