@@ -29,8 +29,6 @@
       chek.style.boxShadow="0px 0px 5px 1px black";
       diveflex.appendChild(para);
       para.appendChild(li);
-      
-     
       li.style.listStyle="none";
       li.innerHTML=task;
       diveflex.appendChild(delet);
