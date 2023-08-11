@@ -3,10 +3,6 @@
  const dive=document.getElementById("dive");
 
 // 0000000000000000000000000000000000000000000000000000000000000000
-
-
-
-
  var task="";
  inpt.addEventListener("input",(e)=>{
    task=e.target.value;
@@ -29,10 +25,8 @@
      chek.addEventListener("click",()=>{
       li.style.textDecoration="line-through 2px solid black";
      })
-
       diveflex.appendChild(chek);
       chek.style.boxShadow="0px 0px 5px 1px black";
-      // chek.style.borderRadius="50%";
       diveflex.appendChild(para);
       para.appendChild(li);
       
@@ -43,11 +37,11 @@
 
       dive.appendChild(diveflex);
       diveflex.style.display="flex";
+      diveflex.style.border="1px solid red";
+     
       diveflex.style.justifyContent="space-around";
       diveflex.style.padding="10px";
       dive.style.display="grid";
-      
-      
       delet.addEventListener("click",(e)=>{
         diveflex.remove();
       })
@@ -56,12 +50,10 @@
         chek.remove();
         delet.remove();
         diveflex.remove();
-        const message=getElementById("message");
-        message.innerHTML="you need to add tasks to do";
+        const message=document.getElementById("message");
+        message.innerHTML="you need to add tasks to do!!!!";
       }
      })
- 
-   
 const resetall=document.getElementById("clear_btn");
 resetall.addEventListener("click",(e)=>{
    window.location.reload();

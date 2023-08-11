@@ -3,6 +3,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-image:linear-gradient(to right,rgb(1, 36, 44),rgba(252, 21, 9, 0.513),rgb(9, 35, 38));
 
 }
 
@@ -19,27 +20,31 @@ form{
     padding: 20px;
     margin-top: 50px;
     .bttn{
-        background: rgb(4, 227, 247);
-        margin: 40px;
-       width:100%;
-       height:50px;
-       display: flex;
-       justify-content:space-around;
-       border-radius:20px;
-       @include centre;
+        // border: 1px solid red;
+        display: grid;
+        justify-content: center;
+        
+        // background: rgb(4, 227, 247);
+
+    //  margin: 40px;
+    //    width:100%;
+    //    height:50px;
+    //    display:grid;
+    //    justify-content:space-around;
+    //    border-radius:20px;
+    //    @include centre;
 
     }
 }
-body{
-    background-image:linear-gradient(to right,rgb(1, 36, 44),rgba(252, 21, 9, 0.513),rgb(9, 35, 38));
-}
-
-
 #add_btn,#reset,#clear_btn{
 @include lebtn;
 color: white;
 }
 #add_btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 30px;
     background-color: rgb(69, 163, 69);
     text-align: center;
     &:hover{
@@ -47,20 +52,31 @@ color: white;
     }
 }
 #reset{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 30px;
     background-color: rgb(99, 85, 8);
     &:hover{
         background-color:rgba(99, 85, 8, 0.845) ;
     }
 }
 #clear_btn{
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 30px;
     background-color: rgb(87, 3, 3);
     &:hover{
         background-color:rgba(87, 3, 3, 0.786) ;
     }
 }
-input{
-    background-color:rgb(4, 227, 247);
-    width: 100px;
+ input{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width:300px;
+    height: 50px;
     margin: 10px;
     outline: none;
     border: none;
@@ -69,20 +85,16 @@ input{
     width: 100%;
     margin: auto;
     div{
-        
         input{
             width: 30px;
             height: 30px;
         }
-        
-       
         button{
             border-radius: 50%;
             color: white;
             background-color: red;
             border: none;
             box-shadow: 0px 0px 5px 1px black;
-            
             width: 30px;
             height: 30px;
             margin: 10px;
@@ -94,7 +106,6 @@ input{
                 color: rgb(255, 255, 255);
                 overflow: hidden;
                 word-wrap: break-word; 
-
             }
         }
     }
