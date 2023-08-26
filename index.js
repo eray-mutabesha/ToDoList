@@ -1,13 +1,18 @@
  const inpt=document.getElementById("task");
  const btn_add=document.getElementById("add_btn");
  const dive=document.getElementById("dive");
-
-// 0000000000000000000000000000000000000000000000000000000000000000
  var task="";
- inpt.addEventListener("input",(e)=>{
-   task=e.target.value;
+
+//  method used before using locale storeage for getting inputs informations enter by a use
+//  inpt.addEventListener("input",(e)=>{
+//    task=e.target.value;
+// })
+// .....................setting input elements in local storege and put them in a <li> element..........................
+inpt.addEventListener('keyup',()=>{
+  localStorage.setItem('value',inpt.value);
+  li.innerHTML=localStorage.getItem('value');
 })
- 
+// ..........................the event of the click button.................................
    btn_add.addEventListener("click",(e)=>{
     const diveflex=document.createElement("div");
     const para=document.createElement("div");
@@ -30,7 +35,8 @@
       diveflex.appendChild(para);
       para.appendChild(li);
       li.style.listStyle="none";
-      li.innerHTML=task;
+      // li.innerHTML=task;
+      li.innerHTML=localStorage.getItem('value');
       diveflex.appendChild(delet);
 
       dive.appendChild(diveflex);
