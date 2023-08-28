@@ -20,6 +20,9 @@ body {
   background-color: rgb(2, 116, 116);
   text-align: center;
 }
+#add_btn:hover {
+  background-color: rgba(2, 116, 116, 0.247);
+}
 
 input {
   margin-left: auto;
@@ -30,4 +33,32 @@ input {
   margin: 10px;
   outline: none;
   border: none;
+}
+
+ul li {
+  list-style: none;
+  padding: 10px;
+  position: relative;
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #555;
+  background-size: cover;
+  background-position: center;
+  left: -30px;
+  top: 5px;
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(icons/cck.png);
 }/*# sourceMappingURL=index.css.map */

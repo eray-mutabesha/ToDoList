@@ -4,22 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="sass/index.css">
     <title>To do list</title>
 </head>
 <body>
-    <form>
+    
         <h1>To do list</h1>
         <div class="bttn">
-            <input type="text"  placeholder="add your task" id="task" required pattern="[a-z]+"> 
-            <button id="add_btn" type="submit">add</button>
-            <button type="reset" id="reset">reset your text</button>
-            <button  id="clear_btn"> refresh the page</button>
+            <input type="text"  placeholder="add your task" id="task "> 
+            <button id="add_btn" onclick="add()">add</button>
+            
+            <!-- <button  id="clear_btn" > refresh the page</button> -->
         </div>
-        <div id="dive">
-        </div> 
-        <span id="message"></span>
-    </form>
+        
+            <ul id="elemetnsliste">
+                <!-- <li class="checked">hello1</li>
+                <li>hello3</li>
+                <li>hello4</li>  -->
+            </ul>
+      
+        
 
     <script src="index.js"></script>
 </body>
