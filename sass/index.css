@@ -61,4 +61,17 @@ ul li.checked {
 
 ul li.checked::before {
   background-image: url(icons/cck.png);
+}
+
+ul li span {
+  background-color: rgba(122, 4, 4, 0.1215686275);
+  border-radius: 50%;
+  padding: 15px;
+  height: 20px;
+  width: 20px;
+  right: 0px;
+}
+
+span:hover {
+  background-color: rgba(67, 1, 1, 0.555);
 }/*# sourceMappingURL=index.css.map */
