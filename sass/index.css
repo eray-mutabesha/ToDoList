@@ -1,10 +1,37 @@
+@media (max-width: 390px) {
+  #allListe input {
+    width: 200px;
+  }
+  #allListe ul li {
+    width: 150px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
   background-image: linear-gradient(to right, rgb(1, 36, 44), rgba(9, 216, 252, 0.513), rgb(9, 35, 38));
 }
 
-#add_btn, #reset, #clear_btn {
+#allListe {
+  background-color: rgba(0, 0, 0, 0.409);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.bttn {
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#add_btn {
   border-radius: 10px;
   border: none;
   box-shadow: 0px 0px 10px 1px black;
@@ -13,15 +40,15 @@ body {
 }
 
 #add_btn {
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 30px;
-  background-color: rgb(2, 116, 116);
+  margin-left: -40px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: rgb(1, 51, 51);
   text-align: center;
 }
 #add_btn:hover {
-  background-color: rgba(2, 116, 116, 0.247);
+  background-color: rgba(2, 116, 116, 0.952);
 }
 
 input {
@@ -37,8 +64,12 @@ input {
 
 ul li {
   list-style: none;
-  padding: 10px;
+  padding: 15px;
+  width: 200px;
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 ul li::before {
@@ -51,7 +82,13 @@ ul li::before {
   background-size: cover;
   background-position: center;
   left: -30px;
-  top: 5px;
+  top: 10px;
+}
+
+ul {
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 ul li.checked {
@@ -66,10 +103,14 @@ ul li.checked::before {
 ul li span {
   background-color: rgba(122, 4, 4, 0.1215686275);
   border-radius: 50%;
-  padding: 15px;
+  padding: 10px;
   height: 20px;
   width: 20px;
   right: 0px;
+  position: absolute;
+  right: 0px;
+  top: 3px;
+  text-align: center;
 }
 
 span:hover {
